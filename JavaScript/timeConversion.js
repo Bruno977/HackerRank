@@ -1,7 +1,8 @@
 let timeConversion = (hour) => {
+    let removePm = hour.split("PM")
     hour.split("").forEach(element => {
         if (element === "P") {
-            console.log("true")
+            console.log(removePm.split(":"))
         }
     });
 }
