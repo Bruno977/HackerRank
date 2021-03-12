@@ -1,9 +1,11 @@
 let timeConversion = (hour) => {
-    let removePm = hour.split("PM")
+    let array = []
     hour.split("").forEach(element => {
-        if (element === "P") {
-            console.log(removePm.split(":"))
+        array.push(element)
+        if (element === "P" || element === "A" || element === "M") {
+            array.pop()
         }
     });
+    array.join("").split(":")
 }
 timeConversion("07:05:45PM")
