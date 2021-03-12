@@ -6,6 +6,6 @@ let timeConversion = (hour) => {
             array.pop()
         }
     });
-    array.join("").split(":")
+    console.log(array.join("").split(":"))
 }
 timeConversion("07:05:45PM")
